@@ -1,0 +1,3 @@
+[submodule "kampf"]
+	path = kampf
+	url = git@github.com:benzap/Kampf.git
