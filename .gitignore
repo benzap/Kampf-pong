@@ -15,4 +15,4 @@ TAGS
 .zedstate
 include/*
 bin/*
-scripts/*
+scripts/engine/*

@@ -57,7 +57,7 @@ EXECUTABLE_NAME = pong
 .PHONY: all clean exec
 exec: $(OBJ_FILES) $(SO_FILES)
 	cp -f *.dll ../bin
-	cp -f ../kampf/scripts/*.lua ../scripts/
+	cp -f ../kampf/scripts/*.lua ../scripts/engine/
 #	cp -f *.so ../bin
 	cp -f $(EXECUTABLE_NAME)$(EXEC_EXTENSION) ../bin
 	cp -f $(EXECUTABLE_NAME).lua ../bin
