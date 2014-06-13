@@ -48,12 +48,19 @@ else
 LIBS += -lkampf -lmingw32 -lSDL2main -lSDL2 -llua51 -lSDL2_ttf -lSDL2_image
 endif
 
+EXECUTABLE_NAME = pong
+
 #redefine our suffixes
 .SUFFIXES:
 .SUFFIXES: .cpp .c .hpp .h
 
 .PHONY: all clean exec
 exec: $(OBJ_FILES) $(SO_FILES)
+	cp -f *.dll ../bin
+	cp -f ../kampf/scripts/*.lua ../scripts/
+#	cp -f *.so ../bin
+	cp -f $(EXECUTABLE_NAME)$(EXEC_EXTENSION) ../bin
+	cp -f $(EXECUTABLE_NAME).lua ../bin
 
 all: clean exec
 
