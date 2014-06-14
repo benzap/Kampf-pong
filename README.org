@@ -1,0 +1,25 @@
+* Kampf-Pong
+  The old classic developed using the Kampf game engine
+
+  if the pong executable runs just fine, feel free to make any modifications to
+  the included pong.lua file. this files contains the innards of the
+  game. enjoy!
+* Downloads
+** Windows (32-bit)
+   [[https://dl.dropboxusercontent.com/u/12007439/kampf-pong.zip][dropbox download]]
+** Ubuntu
+   /Currently Nothing Here/
+
+* Compiling
+  #+BEGIN_SRC
+  git clone https://github.com/benzap/Kampf-pong.git
+  cd Kampf-pong
+  git submodule init
+  git submodule update
+  cd kampf/src
+  make
+  cd ../src
+  make
+  cd ../bin
+  ./pong
+  #+END_SRC
