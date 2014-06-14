@@ -2,8 +2,16 @@
   The old classic developed using the Kampf game engine
 
   if the pong executable runs just fine, feel free to make any modifications to
-  the included pong.lua file. this files contains the innards of the
-  game. enjoy!
+  the included pong.lua file. This files contains the innards of the
+  game. 
+
+  enjoy!
+
+* Controls
+  *W* and *S* -- Move Left Padel up and down
+  *Up* and *Down* -- Move Right Padel up and down
+  *r* -- reset the game
+
 * Downloads
 ** Windows (32-bit)
    [[https://dl.dropboxusercontent.com/u/12007439/kampf-pong.zip][dropbox download]]
