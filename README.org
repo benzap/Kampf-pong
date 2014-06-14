@@ -9,7 +9,9 @@
 
 * Controls
   *W* and *S* -- Move Left Padel up and down
+
   *Up* and *Down* -- Move Right Padel up and down
+
   *r* -- reset the game
 
 * Downloads
