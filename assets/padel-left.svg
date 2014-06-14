@@ -9,15 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="100"
-   height="400"
+   width="20"
+   height="80"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="padel-left.svg"
    inkscape:export-filename="C:\Users\benzap\projects\kampf-pong\assets\padel-left.png"
-   inkscape:export-xdpi="15.8"
-   inkscape:export-ydpi="15.8">
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -27,17 +27,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="37.402184"
-     inkscape:cy="222.41009"
+     inkscape:zoom="5.6"
+     inkscape:cx="-28.525601"
+     inkscape:cy="44.65402"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
-     inkscape:window-width="1618"
-     inkscape:window-height="1031"
-     inkscape:window-x="58"
+     inkscape:window-width="1280"
+     inkscape:window-height="1005"
+     inkscape:window-x="1676"
      inkscape:window-y="-4"
      inkscape:window-maximized="1" />
   <metadata
@@ -56,14 +56,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-652.3622)">
+     transform="translate(0,-972.3622)">
     <rect
-       style="fill:#6575d5;fill-opacity:1;stroke:#000000;stroke-width:3.58149147;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#6575d5;fill-opacity:1;stroke:none"
        id="rect2985"
-       width="96.418503"
-       height="396.41852"
-       x="1.7907457"
-       y="654.15295"
+       width="20"
+       height="80"
+       x="0"
+       y="972.36218"
        inkscape:export-xdpi="15.8"
        inkscape:export-ydpi="15.8" />
   </g>

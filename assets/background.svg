@@ -9,17 +9,17 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="20"
-   height="20"
-   id="svg3787"
+   width="800"
+   height="600"
+   id="svg4271"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="pong-ball.svg"
-   inkscape:export-filename="C:\Users\benzap\projects\kampf-pong\assets\pong-ball.png"
+   sodipodi:docname="background.svg"
+   inkscape:export-filename="C:\Users\benzap\projects\kampf-pong\assets\background.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
-     id="defs3789" />
+     id="defs4273" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="-168.20019"
-     inkscape:cy="29.827123"
+     inkscape:zoom="0.7"
+     inkscape:cx="427.40767"
+     inkscape:cy="411.10709"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -39,7 +39,7 @@
      inkscape:window-y="-4"
      inkscape:window-maximized="1" />
   <metadata
-     id="metadata3792">
+     id="metadata4276">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -54,13 +54,20 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-1032.3622)">
+     transform="translate(0,-452.36218)">
     <rect
-       style="fill:#000000;fill-opacity:1;stroke:none"
-       id="rect3795"
-       width="50"
-       height="50"
+       style="fill:#000000;fill-opacity:0.30392157;stroke:none"
+       id="rect4279"
+       width="4"
+       height="500"
+       x="398"
+       y="552.36218" />
+    <rect
+       style="fill:#919191;fill-opacity:1;stroke:none"
+       id="rect4789"
+       width="800"
+       height="100"
        x="0"
-       y="1002.3621" />
+       y="452.36218" />
   </g>
 </svg>
