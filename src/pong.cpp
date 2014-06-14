@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
     auto lua = kampf.getLua();
     
     //include scripts folder from kampf
-    //lua->addPath("../kampf/scripts/?.lua");
+    lua->addPath("../scripts/engine/?.lua");
     lua->loadScript("pong.lua");
 
     return 0;
