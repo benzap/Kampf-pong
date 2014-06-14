@@ -22,9 +22,13 @@ controls = {
 config = {
 	padelVelocity = 200,
 	ballSpeed = {200, 100},
-	ballSpeedIncrement = 10,
+	ballSpeedIncrement = {10, 3},
 	resetDelay = 2000,
 }
+
+--this increases by the ballSpeedIncrement each bounce
+local ballSpeed = {config.ballSpeed[1],
+				   config.ballSpeed[2]}
 
 -- WINDOW SETTINGS
 local renderWindow = kf.getRenderWindow()
@@ -137,7 +141,8 @@ local ball = sprite:new{
 
 function ball:reset(delay, bLeft)
 	delay = delay or 0
-
+	ballSpeed = {config.ballSpeed[1],
+				 config.ballSpeed[2]}
 	self:setPosition{
 		gameBounds.right / 2 - ballBounds.right / 2 ,
 		gameBounds.top  + 
@@ -166,26 +171,30 @@ end
 
 function ball:bounceLeft()
 	local velocity = ball:getVelocity()
-	velocity[1] = -config.ballSpeed[1]
+	velocity[1] = -ballSpeed[1]
 	ball:setVelocity(velocity)
+	ballSpeed[1] = ballSpeed[1] + config.ballSpeedIncrement[1]
 end
 
 function ball:bounceRight()
 	local velocity = ball:getVelocity()
-	velocity[1] = config.ballSpeed[1]
+	velocity[1] = ballSpeed[1]
 	ball:setVelocity(velocity)
+	ballSpeed[1] = ballSpeed[1] + config.ballSpeedIncrement[1]
 end
 
 function ball:bounceUp()
 	local velocity = ball:getVelocity()
-	velocity[2] = -config.ballSpeed[2]
+	velocity[2] = -ballSpeed[2]
 	ball:setVelocity(velocity)
+	ballSpeed[2] = ballSpeed[2] + config.ballSpeedIncrement[2]
 end
 
 function ball:bounceDown()
 	local velocity = ball:getVelocity()
-	velocity[2] = config.ballSpeed[2]
+	velocity[2] = ballSpeed[2]
 	ball:setVelocity(velocity)
+	ballSpeed[2] = ballSpeed[2] + config.ballSpeedIncrement[2]
 end
 
 
@@ -261,8 +270,12 @@ events.createKeyListener(
 			end
 		end
 
-		if key == "space" and bKeyDown then
+		if key == controls.reset and bKeyDown then
 			resetGame()
+		end
+
+		if key == controls.easteregg and bKeyDown then
+			print("Haha, there is no easter egg")
 		end
 
 end)
@@ -309,7 +322,7 @@ kf.addSystem(
 	"padel-bounds",
 	function() end,
 	function()
-		function bounds(padel)
+		local bounds = function(padel)
 			local position = padel:getPosition()
 
 			if position[2] <= gameBounds.top then
